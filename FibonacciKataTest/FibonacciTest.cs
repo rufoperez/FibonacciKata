@@ -37,5 +37,12 @@ namespace FibonacciKataTest
             int result = Fibonacci.GetNumber(3);
             result.Should().Be(2);
         }
+
+        [Test]
+        public void when_number_is_four_then_return_three()
+        {
+            int result = Fibonacci.GetNumber(4);
+            result.Should().Be(3);
+        }
     }
 }
