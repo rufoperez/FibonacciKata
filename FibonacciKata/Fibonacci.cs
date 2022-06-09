@@ -2,10 +2,10 @@ namespace FibonacciKata;
 
 public class Fibonacci
 {
-    public static int GetNumber(int i)
+    public static int GetNumber(int number)
     {
-        if (i == 1)
-            return 1;
-        return 0;
+        if (number == 0)
+            return 0;
+        return 1;
     }
 }
