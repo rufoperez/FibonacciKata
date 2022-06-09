@@ -8,6 +8,8 @@ public class Fibonacci
             return 0;
         if (number == 3)
             return 2;
+        if (number == 4)
+            return 3;
         return 1;
     }
 }
