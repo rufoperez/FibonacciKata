@@ -23,5 +23,12 @@ namespace FibonacciKataTest
             int result = Fibonacci.GetNumber(1);
             result.Should().Be(1);
         }
+
+        [Test]
+        public void when_number_is_two_then_return_one()
+        {
+            int result = Fibonacci.GetNumber(2);
+            result.Should().Be(1);
+        }
     }
 }
