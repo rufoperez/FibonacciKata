@@ -9,40 +9,16 @@ namespace FibonacciKataTest
         public void Setup()
         {
         }
-
-        [Test]
-        public void when_number_is_zero_then_return_zero()
+        
+        [TestCase(0, 0)]
+        [TestCase(1, 1)]
+        [TestCase(2, 1)]
+        [TestCase(3, 2)]
+        [TestCase(4, 3)]
+        public void return_fibonacci_for_number(int number, int expectedResult)
         {
-            int result = Fibonacci.GetNumber(0);
-            result.Should().Be(0);
-        }
-
-        [Test]
-        public void when_number_is_one_then_return_one()
-        {
-            int result = Fibonacci.GetNumber(1);
-            result.Should().Be(1);
-        }
-
-        [Test]
-        public void when_number_is_two_then_return_one()
-        {
-            int result = Fibonacci.GetNumber(2);
-            result.Should().Be(1);
-        }
-
-        [Test]
-        public void when_number_is_three_then_return_two()
-        {
-            int result = Fibonacci.GetNumber(3);
-            result.Should().Be(2);
-        }
-
-        [Test]
-        public void when_number_is_four_then_return_three()
-        {
-            int result = Fibonacci.GetNumber(4);
-            result.Should().Be(3);
+            int result = Fibonacci.GetNumber(number);
+            result.Should().Be(expectedResult);
         }
     }
 }
