@@ -6,10 +6,8 @@ public class Fibonacci
     {
         if (number == 0)
             return 0;
-        if (number == 3)
-            return 2;
-        if (number == 4)
-            return 3;
-        return 1;
+        if (number == 1)
+            return 1;
+        return GetNumber(number - 1) + GetNumber(number - 2);
     }
 }
